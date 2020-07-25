@@ -1,0 +1,244 @@
+html {
+  scroll-behavior: smooth; }
+
+img {
+  width: 100%; }
+
+header nav .navbar-brand img {
+  width: 40px;
+  height: 40px; }
+header nav .navbar-nav a:hover {
+  background-color: rgba(255, 85, 0, 0.3);
+  border-radius: 5px;
+  padding: 10px; }
+
+/*Store*/
+.store, .Blog-main {
+  margin-top: 2%;
+  margin-bottom: 2%; }
+  .store .card, .Blog-main .card {
+    margin-bottom: 2%; }
+    .store .card ul li, .Blog-main .card ul li {
+      cursor: pointer; }
+      .store .card ul li a, .Blog-main .card ul li a {
+        text-decoration: none;
+        color: #000; }
+      .store .card ul li:hover, .Blog-main .card ul li:hover {
+        background-color: #f50;
+        color: #fff; }
+        .store .card ul li:hover a, .Blog-main .card ul li:hover a {
+          color: #fff; }
+  .store .img-store, .Blog-main .img-store {
+    width: 100%;
+    height: 450px;
+    background-image: url(../images/welcome.jpg);
+    background-size: cover;
+    padding-top: 20%;
+    color: #fff; }
+    .store .img-store h2 span, .Blog-main .img-store h2 span {
+      color: #f50; }
+
+.row {
+  margin-bottom: 2%; }
+
+.items {
+  display: none; }
+  .items img {
+    margin-bottom: 2%; }
+
+/*Blog*/
+.blog {
+  margin-bottom: 4%; }
+  .blog .title {
+    background: #f50;
+    padding: 5px;
+    padding-left: 2%;
+    margin-bottom: 3%;
+    color: #fff; }
+  .blog .card {
+    width: 100%;
+    margin-bottom: 4%; }
+
+.knowAbout {
+  margin-top: 4%; }
+  .knowAbout .title {
+    width: 38%; }
+
+.landmarks .title {
+  width: 46%; }
+.landmarks img {
+  width: 100%; }
+
+.writings .title {
+  width: 30%; }
+.writings ul {
+  text-align: center;
+  list-style: none; }
+  .writings ul li {
+    display: inline-block;
+    margin-right: 1%;
+    color: #777; }
+.writings img {
+  width: 100%;
+  margin-bottom: 2%; }
+
+/*Workshops*/
+.workshops {
+  width: 100%;
+  height: 400px;
+  background-color: #333;
+  padding-top: 10%; }
+  .workshops h4 {
+    color: #fff; }
+  .workshops p {
+    color: #ccc;
+    font-size: 25px;
+    font-weight: bold; }
+  .workshops button {
+    background-color: #f50;
+    color: #fff; }
+
+.check-for-workshop {
+  display: none;
+  width: 70%;
+  height: 400px;
+  position: fixed;
+  top: 20%;
+  left: 15%;
+  z-index: 10;
+  background-color: #f50;
+  border-radius: 10px; }
+  .check-for-workshop span {
+    float: right;
+    font-size: 38px;
+    margin-right: 2%;
+    cursor: pointer;
+    color: #fff; }
+  .check-for-workshop .content {
+    text-align: center; }
+    .check-for-workshop .content h2 {
+      margin-top: 10%;
+      color: #fff; }
+    .check-for-workshop .content p {
+      font-size: 20px;
+      margin-top: 2%; }
+
+/*About-Us*/
+.about-us {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 4%;
+  position: relative; }
+  .about-us .img-cal {
+    width: 58%;
+    position: absolute;
+    z-index: 1;
+    top: -25%;
+    left: 10%;
+    margin-bottom: 2%; }
+    @media (max-width: 768px) {
+      .about-us .img-cal {
+        width: 70%;
+        left: 7%; } }
+    @media (max-width: 550px) {
+      .about-us .img-cal {
+        width: 80%; } }
+    .about-us .img-cal img {
+      width: 100%; }
+  .about-us .text-cal {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 60%;
+    right: 16%;
+    padding: 4%;
+    z-index: 2;
+    background-color: rgba(255, 85, 0, 0.3); }
+    @media (max-width: 1000px) {
+      .about-us .text-cal {
+        width: 60%;
+        top: 24%;
+        right: 8%; } }
+    @media (max-width: 768px) {
+      .about-us .text-cal {
+        width: 60%;
+        top: 20%;
+        right: 6%; } }
+    @media (max-width: 500px) {
+      .about-us .text-cal {
+        top: 15%;
+        right: 2%; } }
+    .about-us .text-cal h2 {
+      font-size: 45px; }
+    .about-us .text-cal p {
+      font-size: 19px; }
+      .about-us .text-cal p span {
+        color: #333;
+        font-weight: bold;
+        font-size: 22px; }
+
+/*Footer*/
+footer {
+  width: 100%;
+  height: auto;
+  padding: 4%;
+  background-color: #333;
+  margin-top: 15%; }
+  footer .info h4 {
+    color: #fff; }
+  footer .info h5 {
+    color: #777; }
+  footer .info p {
+    color: #999; }
+  footer .contact h4 {
+    color: #fff; }
+  footer .contact form input {
+    width: 80%;
+    margin-bottom: 4%;
+    background: none;
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #999;
+    padding: 1%; }
+  footer .contact form textarea {
+    background: none;
+    width: 80%;
+    border-radius: 3px;
+    outline: 0;
+    padding: 2%;
+    color: #fff; }
+  footer .contact form button {
+    margin-top: 2%;
+    padding: 2%;
+    color: #999;
+    background: none;
+    outline: 0;
+    border: 1px solid #999;
+    border-radius: 3px; }
+  footer .go-top {
+    background-color: #f50;
+    border: none;
+    outline: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px; }
+    footer .go-top a {
+      color: #fff;
+      text-decoration: none; }
+  footer .social {
+    margin-top: 2%; }
+    footer .social ul {
+      list-style: none; }
+      footer .social ul li {
+        display: inline-block;
+        margin-right: 2%;
+        font-size: 24px; }
+        footer .social ul li a {
+          text-decoration: none;
+          color: #fff; }
+          footer .social ul li a:hover {
+            color: #f50; }
+  footer p {
+    color: #777; }
+
+/*# sourceMappingURL=style.css.map */

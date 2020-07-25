@@ -1,0 +1,340 @@
+$mainColor:#f50;
+html {
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+}
+header{
+    nav{
+       .navbar-brand{
+            img{
+                width: 40px;
+                height: 40px;
+            }
+       }
+       .navbar-nav{
+           a{
+               &:hover{
+                   background-color: rgba($color: $mainColor, $alpha: 0.3);
+                   border-radius: 5px;
+                   padding: 10px;
+               }
+           }
+
+       }    
+    }
+    
+}
+/*Store*/
+.store{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    .card{
+        margin-bottom: 2%;
+        ul{
+            li{
+                cursor: pointer;
+               
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    
+                }
+                &:hover{
+                    background-color: $mainColor;
+                    color: #fff;
+                    a{
+                        color: #fff;
+                    }                     
+                }
+            
+            }
+        }
+    } 
+    .img-store{
+        width: 100%;
+        height: 450px;
+        background-image: url(../images/welcome.jpg);
+        background-size: cover;
+        padding-top: 20%;
+        color: #fff;
+        h2{
+            span{
+                color: $mainColor;
+            }
+        }
+    }  
+}
+.row{
+    margin-bottom: 2%;
+    
+}
+.items{
+    display: none;
+    img{
+        margin-bottom: 2%;
+    }
+}
+   
+
+/*Blog*/
+.blog{
+    margin-bottom: 4%;
+    .title{
+        
+        background: $mainColor;
+        padding: 5px;
+        padding-left: 2%;
+        margin-bottom: 3%;
+        color: #fff;
+    }
+    .card{
+        width: 100%;
+        margin-bottom: 4%;
+       
+    }
+    
+}
+.knowAbout{
+    margin-top: 4%;
+    .title{
+        width: 38%;
+    }
+}
+.landmarks{
+    .title{
+        width: 46%;
+
+    }
+    img{
+        width: 100%;
+    }
+
+}
+.writings{
+    .title{
+        width: 30%;
+       
+    }
+    ul{
+        text-align: center;
+        list-style: none;
+        li{
+            display: inline-block;
+            margin-right: 1%;
+            color: #777;
+        }
+    } 
+    img{
+        width: 100%;
+        margin-bottom: 2%;
+    }  
+
+}
+.Blog-main{
+    @extend .store;
+}
+
+/*Workshops*/
+.workshops{
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+    padding-top: 10%;
+    h4{
+       color: #fff; 
+    }
+    p{
+        color: #ccc;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    button{
+        
+        background-color: $mainColor;
+        color: #fff;
+    }
+}
+.check-for-workshop{
+    display: none;
+    width: 70%;
+    height: 400px;
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    z-index: 10;
+    background-color: $mainColor;
+    border-radius: 10px;
+    span{
+        float:right;
+        font-size: 38px;
+        margin-right: 2%;
+        cursor: pointer;
+        color: #fff;
+    }
+    .content {
+        text-align:center;
+       h2{
+        margin-top:10%; 
+        color: #fff; 
+       }
+        p{
+            font-size: 20px;
+            margin-top:2%; 
+        }
+    }
+}
+
+/*About-Us*/
+.about-us{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 4%;
+    position: relative;
+    .img-cal{
+        width: 58%;
+        position: absolute;
+        z-index: 1;
+        top: -25%;
+        left: 10%;
+        margin-bottom: 2%;
+        @media (max-width:768px ) {
+            width:70%;
+            left: 7%;
+            
+        }
+        @media (max-width:550px ) {
+            width:80%;
+            
+        }
+        img{
+            width: 100%;
+        }   
+    }
+    .text-cal{
+        width: 50%;
+        height: auto;
+        position: absolute;
+        top:60%;
+        right: 16%;
+        padding: 4%;
+        z-index: 2;
+        background-color: rgba($color: $mainColor, $alpha: 0.3);
+        @media (max-width:1000px ) {
+            width:60%;
+            top:24%;
+            right: 8%;
+        }
+        @media (max-width:768px ) {
+            width:60%;
+            top:20%;
+            right: 6%;
+        }
+        @media (max-width:500px ) {
+            
+            top:15%;
+            right: 2%;
+            
+        }
+        h2{
+            font-size:45px ;
+        }
+        p{
+            font-size: 19px;
+            span{
+                color: #333;
+                font-weight: bold;
+                font-size: 22px;
+            }
+        }
+    }
+}
+/*Footer*/
+footer{
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    background-color: #333;
+    margin-top: 15%;
+    .info{
+        h4{
+            color:#fff;
+        }
+        h5{
+            color:#777;
+        }
+        p{
+            color: #999;
+        }
+    }
+    .contact{
+        h4{
+            color:#fff;  
+        }
+        form{
+            input{
+                width: 80%;
+                margin-bottom: 4%;
+                background: none;
+                border:none;
+                outline: 0;
+                border-bottom: 1px solid #999;
+                padding: 1%;
+            }
+            textarea{
+                background: none;
+                width: 80%;
+                border-radius: 3px;
+                outline: 0;
+                padding: 2%;
+                color: #fff;
+            }
+            button{
+                margin-top: 2%;
+                padding: 2%;
+                color: #999;
+                background: none;
+                outline: 0;
+                border:1px solid #999;
+                border-radius: 3px;
+                
+
+            }
+        }
+    }
+    .go-top{
+        background-color: $mainColor;
+        border: none;
+        outline: 0;
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        a{
+            color: #fff;
+            text-decoration: none;
+        }    
+    }
+    .social{
+        margin-top: 2%;
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+                margin-right: 2%; 
+                font-size: 24px;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    &:hover{
+                    color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+    p{
+        color: #777;
+    }
+}
+
